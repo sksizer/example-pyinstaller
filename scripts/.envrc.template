@@ -1,0 +1,8 @@
+
+# Create/install virtual env if needed
+poetry install 2>/dev/null
+
+# Get and use the poetry env path
+if [[ -z "$POETRY_ACTIVE" ]]; then
+  source "$(poetry env info --path)/bin/activate"
+fi
