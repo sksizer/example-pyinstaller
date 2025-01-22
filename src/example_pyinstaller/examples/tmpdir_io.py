@@ -2,7 +2,7 @@ import tempfile
 from collections.abc import Sequence
 from pathlib import Path
 
-from example_pyinstaller.types import RuntimeTest, TestResult, TestStatus
+from example_pyinstaller.model import RuntimeTest, TestResult, TestStatus
 
 
 def tmp_dir_io() -> Sequence[TestResult]:

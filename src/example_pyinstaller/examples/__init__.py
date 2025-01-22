@@ -1,10 +1,16 @@
 import example_pyinstaller.examples.example as example
+import example_pyinstaller.examples.sqlite_io as sqlite_io
 import example_pyinstaller.examples.tmpdir_io as tmpdir_io
 import example_pyinstaller.examples.userdir_io as userdir_io
-from example_pyinstaller.types import RuntimeTest
+from example_pyinstaller.model import RuntimeTest
 
 # Explicit list of example/test modules
-REGISTRY = [example.TEST, tmpdir_io.TEST, userdir_io.TEST]
+REGISTRY = [
+    example.TEST,
+    tmpdir_io.TEST,
+    userdir_io.TEST,
+    sqlite_io.TEST,
+]
 
 
 def get_tests() -> list[RuntimeTest]:

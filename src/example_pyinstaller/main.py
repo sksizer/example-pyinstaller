@@ -4,7 +4,7 @@ from collections.abc import Sequence
 from colorama import Fore, Style, init
 
 from example_pyinstaller.examples import get_tests
-from example_pyinstaller.types import TestResult, TestStatus
+from example_pyinstaller.model import TestResult, TestStatus
 
 
 def show_results(results: Sequence[TestResult]) -> None:

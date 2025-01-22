@@ -1,7 +1,7 @@
 import sys
 from collections.abc import Sequence
 
-from example_pyinstaller.types import RuntimeTest, TestResult, TestStatus
+from example_pyinstaller.model import RuntimeTest, TestResult, TestStatus
 
 
 def run_version_test() -> Sequence[TestResult]:
