@@ -4,7 +4,6 @@ from example_pyinstaller.examples import (
 )
 from example_pyinstaller.types import RuntimeTest
 
-
 # Explicit list of example/test modules
 REGISTRY = [
     example,
@@ -18,6 +17,4 @@ def get_tests() -> list[RuntimeTest]:
     Returns:
         List of RuntimeTest instances
     """
-    return [
-        module.TEST for module in REGISTRY if hasattr(module, "TEST")
-    ]
+    return [module.TEST for module in REGISTRY if hasattr(module, "TEST")]

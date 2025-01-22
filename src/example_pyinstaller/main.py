@@ -1,6 +1,5 @@
 import sys
 from collections.abc import Sequence
-from pathlib import Path
 
 from colorama import Fore, Style, init
 
@@ -28,7 +27,6 @@ def main() -> None:
     print(f"Executable path: {sys.executable}")
     print("\nRunning examples...")
 
-    runtime_test_dir = Path(__file__).parent / "examples"
     tests = get_tests()
     all_results: list[TestResult] = []
 

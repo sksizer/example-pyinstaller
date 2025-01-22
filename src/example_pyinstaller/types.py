@@ -19,4 +19,4 @@ class TestResult:
 class RuntimeTest:
     name: str
     description: str
-    run_test: Callable[[], Sequence[TestResult]] 
+    run_test: Callable[[], Sequence[TestResult]]
